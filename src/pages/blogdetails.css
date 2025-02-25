@@ -1,0 +1,87 @@
+/* Full-page background matching */
+body{
+    background: var(--body-color); /* Ensure same background as other pages */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Blog details container */
+.blog-details {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: var(--body-color); /* Keep blog container white */
+}
+
+.blog-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Adds space between title and image */
+}
+
+.blog-img {
+    width: 100%; /* Makes the image fill the container width */
+    height: 400px; /* Keeps the original aspect ratio */
+    display: block; /* Removes unwanted bottom spacing */
+    border-radius: 5px; /* Optional: Adds smooth edges */
+    object-fit: cover; /* Ensures the image covers the container */
+}
+
+
+
+/* Blog content styling */
+.blog-content {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Subtitle styling (e.g., 'Introduction') */
+.blog-content strong {
+    font-weight: bold; /* Ensure subtitles remain bold */
+    display: block;
+    margin-top: 15px;
+}
+
+/* Paragraph styling (NOT bold) */
+.blog-content p {
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+/* Back button styling */
+.back-button {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.back-button:hover {
+    color: #d45959;
+}
+
+/* Subheading styling (e.g., 'Introduction') */
+.blog-content strong {
+    font-weight: bold; /* Ensure subtitles remain bold */
+    display: block;
+    font-size: 18px; /* Slightly larger font for subheadings */
+    margin-top: 20px; /* More space above subheadings */
+    margin-bottom: 10px; /* Space below subheadings */
+    color: rgb(33, 31, 31);
+}
+
+/* Paragraph styling */
+.blog-content p {
+    font-weight: normal;
+    margin-top: 10px; /* Ensure space between paragraphs */
+    margin-bottom: 15px; /* Ensure space below each paragraph */
+    color: #333;
+}
